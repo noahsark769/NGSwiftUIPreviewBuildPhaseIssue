@@ -13,6 +13,7 @@
 		A155FFC024B2461200AF1088 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A155FFBF24B2461200AF1088 /* Assets.xcassets */; };
 		A155FFC324B2461200AF1088 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A155FFC224B2461200AF1088 /* Preview Assets.xcassets */; };
 		A155FFC624B2461200AF1088 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A155FFC424B2461200AF1088 /* LaunchScreen.storyboard */; };
+		A155FFCF24B247B200AF1088 /* date.txt in Resources */ = {isa = PBXBuildFile; fileRef = A155FFCE24B247B200AF1088 /* date.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		A155FFC224B2461200AF1088 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A155FFC524B2461200AF1088 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A155FFC724B2461200AF1088 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A155FFCE24B247B200AF1088 /* date.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = date.txt; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		A155FFB824B2461000AF1088 /* NGSwiftUIPreviewBuildPhaseIssue */ = {
 			isa = PBXGroup;
 			children = (
+				A155FFCE24B247B200AF1088 /* date.txt */,
 				A155FFB924B2461000AF1088 /* AppDelegate.swift */,
 				A155FFBB24B2461000AF1088 /* SceneDelegate.swift */,
 				A155FFBD24B2461000AF1088 /* ContentView.swift */,
@@ -85,6 +88,7 @@
 				A155FFB224B2461000AF1088 /* Sources */,
 				A155FFB324B2461000AF1088 /* Frameworks */,
 				A155FFB424B2461000AF1088 /* Resources */,
+				A155FFCD24B246D800AF1088 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -132,6 +136,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A155FFCF24B247B200AF1088 /* date.txt in Resources */,
 				A155FFC624B2461200AF1088 /* LaunchScreen.storyboard in Resources */,
 				A155FFC324B2461200AF1088 /* Preview Assets.xcassets in Resources */,
 				A155FFC024B2461200AF1088 /* Assets.xcassets in Resources */,
@@ -139,6 +144,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A155FFCD24B246D800AF1088 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path\ndate > \"$SRCROOT/date.txt\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A155FFB224B2461000AF1088 /* Sources */ = {
